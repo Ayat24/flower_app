@@ -21,7 +21,11 @@ class login extends StatelessWidget {
               const SizedBox(
                 height: 64,
               ),
-              Custom_text_Field(),
+              Custom_text_Field(
+                textInputTypee:
+                ispassword:
+                hinttexttt:
+              ),
               const SizedBox(
                 height: 64,
               ),
