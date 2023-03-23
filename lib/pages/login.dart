@@ -4,6 +4,8 @@ import 'dart:html';
 
 import 'package:flutter/material.dart';
 
+import '../shared/custom_textfield.dart';
+
 class login extends StatelessWidget {
   const login({super.key});
 
@@ -19,39 +21,7 @@ class login extends StatelessWidget {
               const SizedBox(
                 height: 64,
               ),
-              TextField(
-                keyboardType: TextInputType.text,
-                obscureText: false,
-                decoration: InputDecoration(
-                  hintText: "Enter your Email;",
-                  enabledBorder: OutlineInputBorder(
-                    borderSide: Divider.createBorderSide(context),
-                  ),
-                  focusedBorder: OutlineInputBorder(
-                    borderSide: BorderSide(color: Colors.grey),
-                  ),
-                  filled: true,
-                  contentPadding: const EdgeInsets.all(10),
-                ),
-              ),
-              const SizedBox(
-                height: 64,
-              ),
-              TextField(
-                keyboardType: TextInputType.text,
-                obscureText: false,
-                decoration: InputDecoration(
-                  hintText: "Enter your Email;",
-                  enabledBorder: OutlineInputBorder(
-                    borderSide: Divider.createBorderSide(context),
-                  ),
-                  focusedBorder: OutlineInputBorder(
-                    borderSide: BorderSide(color: Colors.grey),
-                  ),
-                  filled: true,
-                  contentPadding: const EdgeInsets.all(10),
-                ),
-              )
+              Custom_text_Field(),
             ],
           ),
         ),
