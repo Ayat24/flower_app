@@ -30,9 +30,9 @@ class login extends StatelessWidget {
                 height: 64,
               ),
               Custom_text_Field(
-                textInputTypee: TextInputType.emailAddress,
-                ispassword: false,
-                hinttexttt: "enter your email",
+                textInputTypee: TextInputType.text,
+                ispassword: true,
+                hinttexttt: "enter your password",
               ),
             ],
           ),

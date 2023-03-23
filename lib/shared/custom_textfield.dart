@@ -3,15 +3,16 @@
 import 'package:flutter/material.dart';
 
 class Custom_text_Field extends StatelessWidget {
- final  bool ispassword;
+  final bool ispassword;
   final String hinttexttt;
- final  TextInputType textInputTypee;
+  final TextInputType textInputTypee;
 
-Custom_text_Field({super.key, 
-  required this.hinttexttt,
-  required this.ispassword,
-  required this.textInputTypee,
-})
+  Custom_text_Field({
+    super.key,
+    required this.hinttexttt,
+    required this.ispassword,
+    required this.textInputTypee,
+  });
 
   @override
   Widget build(BuildContext context) {
