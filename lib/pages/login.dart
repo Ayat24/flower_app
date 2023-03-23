@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'dart:html';
 
 import 'package:flutter/material.dart';
@@ -19,15 +21,17 @@ class login extends StatelessWidget {
               ),
               TextField(
                 keyboardType: TextInputType.text,
-                obscureText: true,
+                obscureText: false,
                 decoration: InputDecoration(
-                  hintText: "Enter your password;",
+                  hintText: "Enter your Email;",
                   enabledBorder: OutlineInputBorder(
                     borderSide: Divider.createBorderSide(context),
                   ),
                   focusedBorder: OutlineInputBorder(
                     borderSide: BorderSide(color: Colors.grey),
                   ),
+                  filled: true,
+                  contentPadding: const EdgeInsets.all(8),
                 ),
               )
             ],
