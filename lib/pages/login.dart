@@ -22,14 +22,18 @@ class login extends StatelessWidget {
                 height: 64,
               ),
               Custom_text_Field(
-                textInputTypee:
-                ispassword:
-                hinttexttt:
+                textInputTypee: TextInputType.emailAddress,
+                ispassword: false,
+                hinttexttt: "enter your email",
               ),
               const SizedBox(
                 height: 64,
               ),
-              Custom_text_Field(),
+              Custom_text_Field(
+                textInputTypee: TextInputType.emailAddress,
+                ispassword: false,
+                hinttexttt: "enter your email",
+              ),
             ],
           ),
         ),
