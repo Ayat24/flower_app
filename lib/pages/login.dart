@@ -15,6 +15,15 @@ class login extends StatelessWidget {
             TextField(
               keyboardType: TextInputType.text,
               obscureText: true,
+              decoration: InputDecoration(
+                hintText: "Enter your password;",
+                enabledBorder: OutlineInputBorder(
+                  borderSide: Divider.createBorderSide(context),
+                ),
+                focusedBorder: OutlineInputBorder(
+                  borderSide: BorderSide(color: Colors.grey),
+                ),
+              ),
             )
           ],
         ),
