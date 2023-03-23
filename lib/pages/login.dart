@@ -30,9 +30,8 @@ class login extends StatelessWidget {
                   focusedBorder: OutlineInputBorder(
                     borderSide: BorderSide(color: Colors.grey),
                   ),
-                  fillColor: Colors.red,
                   filled: true,
-                  contentPadding: const EdgeInsets.all(8),
+                  contentPadding: const EdgeInsets.all(10),
                 ),
               )
             ],
