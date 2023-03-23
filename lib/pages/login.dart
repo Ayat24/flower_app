@@ -14,6 +14,7 @@ class login extends StatelessWidget {
           children: [
             TextField(
               keyboardType: TextInputType.text,
+              obscureText: true,
             )
           ],
         ),
