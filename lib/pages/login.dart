@@ -22,6 +22,10 @@ class login extends StatelessWidget {
                 height: 64,
               ),
               Custom_text_Field(),
+              const SizedBox(
+                height: 64,
+              ),
+              Custom_text_Field(),
             ],
           ),
         ),

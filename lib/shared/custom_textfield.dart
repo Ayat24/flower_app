@@ -8,10 +8,10 @@ class Custom_text_Field extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextField(
-      keyboardType: TextInputType.text,
-      obscureText: false,
+      keyboardType: extInputTypee,
+      obscureText: ispassword,
       decoration: InputDecoration(
-        hintText: "Enter your Email;",
+        hintText: hinttexttt,
         enabledBorder: OutlineInputBorder(
           borderSide: Divider.createBorderSide(context),
         ),
