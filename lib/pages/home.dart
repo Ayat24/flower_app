@@ -27,6 +27,10 @@ class Home extends StatelessWidget {
                       onPressed: () {}, icon: Icon(Icons.add_shopping_cart)),
                 ],
               ),
+              Padding(
+                padding: const EdgeInsets.only(right: 12),
+                child: Text("\$ 128"),
+              )
             ],
           )
         ],
