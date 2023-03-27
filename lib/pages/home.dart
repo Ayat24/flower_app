@@ -9,36 +9,43 @@ class Home extends StatelessWidget {
       drawer: Drawer(
         child: Column(
           children: [
-            UserAccountsDrawerHeader(
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                    image: AssetImage("assets/img/test.jpg"),
-                    fit: BoxFit.cover),
-              ),
-              accountName: Text("ali Hassan",
-                  style: TextStyle(
-                    color: Color.fromARGB(255, 255, 255, 255),
-                  )),
-              accountEmail: Text("ali@yahoo.com"),
-              currentAccountPictureSize: Size.square(99),
-              currentAccountPicture: CircleAvatar(
-                  radius: 55,
-                  backgroundImage: AssetImage("assets/img/ali.jpg")),
+            Column(
+              children: [
+                UserAccountsDrawerHeader(
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                        image: AssetImage("assets/img/test.jpg"),
+                        fit: BoxFit.cover),
+                  ),
+                  accountName: Text("ali Hassan",
+                      style: TextStyle(
+                        color: Color.fromARGB(255, 255, 255, 255),
+                      )),
+                  accountEmail: Text("ali@yahoo.com"),
+                  currentAccountPictureSize: Size.square(99),
+                  currentAccountPicture: CircleAvatar(
+                      radius: 55,
+                      backgroundImage: AssetImage("assets/img/ali.jpg")),
+                ),
+                ListTile(
+                    title: Text("Home"),
+                    leading: Icon(Icons.home),
+                    onTap: () {}),
+                ListTile(
+                    title: Text("My products"),
+                    leading: Icon(Icons.add_shopping_cart),
+                    onTap: () {}),
+                ListTile(
+                    title: Text("About"),
+                    leading: Icon(Icons.help_center),
+                    onTap: () {}),
+                ListTile(
+                    title: Text("Logout"),
+                    leading: Icon(Icons.exit_to_app),
+                    onTap: () {}),
+              ],
             ),
-            ListTile(
-                title: Text("Home"), leading: Icon(Icons.home), onTap: () {}),
-            ListTile(
-                title: Text("My products"),
-                leading: Icon(Icons.add_shopping_cart),
-                onTap: () {}),
-            ListTile(
-                title: Text("About"),
-                leading: Icon(Icons.help_center),
-                onTap: () {}),
-            ListTile(
-                title: Text("Logout"),
-                leading: Icon(Icons.exit_to_app),
-                onTap: () {}),
+            Text("data")
           ],
         ),
       ),
