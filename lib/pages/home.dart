@@ -8,6 +8,10 @@ class Home extends StatelessWidget {
     return Scaffold(
       drawer: Drawer(
         child: Column(
+          children: [
+            UserAccountsDrawerHeader(),
+          ],
+        ),
       ),
       appBar: AppBar(
         backgroundColor: Color.fromARGB(255, 76, 141, 95),
