@@ -25,7 +25,8 @@ class Home extends StatelessWidget {
                   radius: 55,
                   backgroundImage: AssetImage("assets/img/ali.jpg")),
             ),
-            ListTile(),
+            ListTile(
+                title: Text("Home"), leading: Icon(Icons.home), onTap: () {}),
           ],
         ),
       ),
