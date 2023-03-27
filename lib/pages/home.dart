@@ -8,6 +8,7 @@ class Home extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Color.fromARGB(255, 76, 141, 95),
+        title: Text("Home"),
       ),
     );
   }
