@@ -14,6 +14,7 @@ class Home extends StatelessWidget {
                   style: TextStyle(
                     color: Color.fromARGB(255, 255, 255, 255),
                   )),
+              accountEmail: Text("ali@yahoo.com"),
             ),
           ],
         ),
