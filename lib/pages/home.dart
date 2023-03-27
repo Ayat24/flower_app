@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_appl/shared/colors.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -55,8 +56,9 @@ class Home extends StatelessWidget {
         ),
       ),
       appBar: AppBar(
-        backgroundColor: Color.fromARGB(255, 76, 141, 95),
+        backgroundColor: appbarGreen,
         title: Text("Home"),
+        leading: Text("data"),
         actions: [
           Row(
             children: [
@@ -86,7 +88,6 @@ class Home extends StatelessWidget {
           )
         ],
       ),
-      leading: Text("data"),
     );
   }
 }
