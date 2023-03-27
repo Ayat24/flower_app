@@ -10,6 +10,11 @@ class Home extends StatelessWidget {
         child: Column(
           children: [
             UserAccountsDrawerHeader(
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                    image: AssetImage("assets/img/test.jpg"),
+                    fit: BoxFit.cover),
+              ),
               accountName: Text("ali Hassan",
                   style: TextStyle(
                     color: Color.fromARGB(255, 255, 255, 255),
