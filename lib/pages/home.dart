@@ -46,7 +46,7 @@ class Home extends StatelessWidget {
                     onTap: () {}),
               ],
             ),
-            Text("data")
+            Container()
           ],
         ),
       ),
