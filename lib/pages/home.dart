@@ -16,6 +16,7 @@ class Home extends StatelessWidget {
                   )),
               accountEmail: Text("ali@yahoo.com"),
               currentAccountPictureSize: Size.square(99),
+              currentAccountPicture: CircleAvatar(),
             ),
           ],
         ),
