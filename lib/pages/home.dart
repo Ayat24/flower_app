@@ -9,7 +9,12 @@ class Home extends StatelessWidget {
       drawer: Drawer(
         child: Column(
           children: [
-            UserAccountsDrawerHeader(),
+            UserAccountsDrawerHeader(
+              accountName: Text("ali Hassan",
+                  style: TextStyle(
+                    color: Color.fromARGB(255, 255, 255, 255),
+                  )),
+            ),
           ],
         ),
       ),
