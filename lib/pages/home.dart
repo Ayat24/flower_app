@@ -46,7 +46,9 @@ class Home extends StatelessWidget {
                     onTap: () {}),
               ],
             ),
-            Container()
+            Container(
+              margin: EdgeInsets.only(bottom: 12),
+            )
           ],
         ),
       ),
