@@ -15,6 +15,7 @@ class Home extends StatelessWidget {
                     color: Color.fromARGB(255, 255, 255, 255),
                   )),
               accountEmail: Text("ali@yahoo.com"),
+              currentAccountPictureSize: Size.square(99),
             ),
           ],
         ),
