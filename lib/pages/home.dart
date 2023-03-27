@@ -8,6 +8,7 @@ class Home extends StatelessWidget {
     return Scaffold(
       drawer: Drawer(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Column(
               children: [
