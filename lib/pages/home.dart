@@ -48,6 +48,8 @@ class Home extends StatelessWidget {
             ),
             Container(
               margin: EdgeInsets.only(bottom: 12),
+              child: Text("Developed by Ali Hassan © 2022",
+                  style: TextStyle(fontSize: 16)),
             )
           ],
         ),
