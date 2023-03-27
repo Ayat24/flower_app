@@ -15,12 +15,14 @@ class Home extends StatelessWidget {
               Stack(
                 children: [
                   Container(
-                    child: Text(
-                      "8",
-                      style: TextStyle(color: Color.fromARGB(255, 0, 0, 0)),
-                    ),
-                    padding: EdgeInsets.all(5),
-                  ),
+                      child: Text(
+                        "8",
+                        style: TextStyle(color: Color.fromARGB(255, 0, 0, 0)),
+                      ),
+                      padding: EdgeInsets.all(5),
+                      decoration: BoxDecoration(
+                        ),
+              
                 ],
               ),
               Padding(
