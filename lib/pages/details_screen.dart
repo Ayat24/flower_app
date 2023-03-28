@@ -117,6 +117,9 @@ class Details extends StatelessWidget {
                       "Flower Shop",
                       style: TextStyle(fontSize: 19),
                     ),
+                    SizedBox(
+                      height: 16,
+                    ),
                   ],
                 )
               ],
