@@ -6,21 +6,22 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: GridView.builder(
-          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: 2,
-            childAspectRatio: 3 / 2,
-            crossAxisSpacing: 10,
-            mainAxisSpacing: 33,
-          ),
-          itemCount: 4,
-          itemBuilder: (BuildContext context, int index) {
-            return GridTile(
-              child:
-                  GestureDetector(onTap: () {},
+     return Scaffold(
+        body: Padding(
+          padding: const EdgeInsets.only(top: 22),
+          child: GridView.builder(
+              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: 2,
+                  childAspectRatio: 3 / 2,
+                  crossAxisSpacing: 10,
+                  mainAxisSpacing: 33),
+              itemCount: 4,
+              itemBuilder: (BuildContext context, int index) {
+                return GestureDetector(
+                  onTap: () {},
                   child: GridTile(
                     child: Stack(children: [
+
                       Positioned(
                         top: -3,
                         bottom: -9,
@@ -28,12 +29,14 @@ class Home extends StatelessWidget {
                         left: 0,
                         child: ClipRRect(
                             borderRadius: BorderRadius.circular(55),
-                  child: Image.asset("img PATH")),
+                            child: Image.asset("assets/img/1.webp")),
                       ),
                     ]),
+                   footer: GridTileBar(
                   ),
             );
           }),
+        ),
     
       drawer: Drawer(
         child: Column(
