@@ -16,7 +16,9 @@ class Home extends StatelessWidget {
           ),
           itemCount: 4,
           itemBuilder: (BuildContext context, int index) {
-            return GridTile();
+            return GridTile(
+              child: GestureDetector(),
+            );
           }),
       drawer: Drawer(
         child: Column(
