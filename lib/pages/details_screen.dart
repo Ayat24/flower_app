@@ -57,6 +57,7 @@ class Details extends StatelessWidget {
             
                 children: [
                   Container(
+                      padding: EdgeInsets.all(4),
                       
                       )
                       ),
