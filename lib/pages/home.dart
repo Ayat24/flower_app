@@ -17,7 +17,8 @@ class Home extends StatelessWidget {
           itemCount: 4,
           itemBuilder: (BuildContext context, int index) {
             return GridTile(
-              child: GestureDetector(),
+              child:
+                  GestureDetector(onTap: () {}, child: Image.asset("img PATH")),
             );
           }),
       drawer: Drawer(
