@@ -1,9 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_appl/shared/colors.dart';
 
-class Details extends StatelessWidget {
-  const Details({super.key});
-  bool isShowMore;
+class Details extends StatefulWidget {
+  @override
+  State<Details> createState() => _DetailsState();
+}
+
+class _DetailsState extends State<Details> {
+  //const Details({super.key});
+  bool isShowMore = true;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
