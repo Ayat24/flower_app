@@ -137,6 +137,13 @@ class Details extends StatelessWidget {
                           fontSize: 18,
                         ),
                         maxLines: 3),
+                    TextButton(
+                      onPressed: () {
+                        setState(() {
+                          isShowMore = !isShowMore;
+                        });
+                      },
+                    )
                   ],
                 )
               ],
