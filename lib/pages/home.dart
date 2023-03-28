@@ -7,7 +7,10 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: GridView.builder(),
+      body: GridView.builder(
+         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount()
+         
+         ),,
       drawer: Drawer(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
