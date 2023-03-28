@@ -70,6 +70,9 @@ class Details extends StatelessWidget {
                 SizedBox(
                   width: 8,
                 ),
+                Row(
+                  children: [],
+                ),
               ],
             )
           ],
