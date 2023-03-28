@@ -18,9 +18,15 @@ class Home extends StatelessWidget {
           itemBuilder: (BuildContext context, int index) {
             return GridTile(
               child:
-                  GestureDetector(onTap: () {}, child: Image.asset("img PATH")),
+                  GestureDetector(onTap: () {},
+                  child: GridTile(
+                    child: Stack(children: [
+                     
+                    ]),
+                  ),
             );
           }),
+    
       drawer: Drawer(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
