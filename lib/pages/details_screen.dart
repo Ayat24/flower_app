@@ -110,6 +110,9 @@ class Details extends StatelessWidget {
                       color: Color.fromARGB(168, 3, 65, 27),
                       // color: Color.fromARGB(255, 186, 30, 30),
                     ),
+                    SizedBox(
+                      width: 3,
+                    ),
                   ],
                 )
               ],
