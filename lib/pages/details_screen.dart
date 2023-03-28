@@ -102,7 +102,16 @@ class Details extends StatelessWidget {
                 SizedBox(
                   width: 66,
                 ),
-                Row()
+                Row(
+                  children: [
+                    Icon(
+                      Icons.edit_location,
+                      size: 26,
+                      color: Color.fromARGB(168, 3, 65, 27),
+                      // color: Color.fromARGB(255, 186, 30, 30),
+                    ),
+                  ],
+                )
               ],
             ),
           ],
