@@ -62,7 +62,10 @@ class Details extends StatelessWidget {
                       "New",
                       style: TextStyle(fontSize: 15),
                     ),
-                    decoration: BoxDecoration()),
+                    decoration: BoxDecoration(
+                      color: Color.fromARGB(255, 255, 129, 129),
+                      borderRadius: BorderRadius.circular(4),
+                    )),
               ],
             )
           ],
