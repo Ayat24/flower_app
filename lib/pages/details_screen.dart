@@ -132,18 +132,25 @@ class Details extends StatelessWidget {
                       height: 16,
                     ),
                     Text(
-                        "A flower, sometimes known as a bloom or blossom, is the reproductive structure found in flowering plants (plants of the division Angiospermae). The biological function of a flower is to facilitate reproduction, usually by providing a mechanism for the union of sperm with eggs. Flowers may facilitate outcrossing (fusion of sperm and eggs from different individuals in a population) resulting from cross-pollination or allow selfing (fusion of sperm and egg from the same flower) when self-pollination occurs.",
-                        style: TextStyle(
-                          fontSize: 18,
-                        ),
-                        maxLines: 3),
+                      "A flower, sometimes known as a bloom or blossom, is the reproductive structure found in flowering plants (plants of the division Angiospermae). The biological function of a flower is to facilitate reproduction, usually by providing a mechanism for the union of sperm with eggs. Flowers may facilitate outcrossing (fusion of sperm and eggs from different individuals in a population) resulting from cross-pollination or allow selfing (fusion of sperm and egg from the same flower) when self-pollination occurs.",
+                      style: TextStyle(
+                        fontSize: 18,
+                      ),
+                      maxLines: isShowMore ? 3 : null,
+                      overflow: TextOverflow.fade,
+                    ),
                     TextButton(
-                      onPressed: () {
-                        setState(() {
-                          isShowMore = !isShowMore;
-                        });
-                      },
-                    )
+                        onPressed: () {
+                          setState(() {
+                            isShowMore = !isShowMore;
+                          });
+                        },
+                        child: Text(
+                          isShowMore ? "Show more" : "Show less",
+                          style: TextStyle(
+                            fontSize: 18,
+                          ),
+                        ))
                   ],
                 )
               ],
