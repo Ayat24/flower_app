@@ -46,7 +46,13 @@ class Details extends StatelessWidget {
           SizedBox(
             height: 11,
           ),
-          Text("details"),
+          Text(
+            "\$ 12.99",
+            style: TextStyle(fontSize: 20),
+          ),
+          SizedBox(
+            height: 16,
+          ),
         ],
       ),
     );
