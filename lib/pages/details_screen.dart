@@ -3,7 +3,7 @@ import 'package:flutter_appl/shared/colors.dart';
 
 class Details extends StatelessWidget {
   const Details({super.key});
-
+  bool isShowMore;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
