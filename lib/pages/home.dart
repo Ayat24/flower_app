@@ -19,7 +19,7 @@ class Home extends StatelessWidget {
     Item(price: 12.99, imgPath: "assets/img/8.webp"),
   ];
 
-  const Home({super.key});
+  Home({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +32,7 @@ class Home extends StatelessWidget {
                 childAspectRatio: 3 / 2,
                 crossAxisSpacing: 10,
                 mainAxisSpacing: 33),
-            itemCount: 4,
+            itemCount: items.length,
             itemBuilder: (BuildContext context, int index) {
               return GestureDetector(
                 onTap: () {},
