@@ -40,7 +40,12 @@ class Details extends StatelessWidget {
           )
         ],
       ),
-      body: Text("details"),
+      body: Column(
+        children: [
+          Image.asset("assets/img/2.webp"),
+          Text("details"),
+        ],
+      ),
     );
   }
 }
