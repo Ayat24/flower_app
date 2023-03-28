@@ -57,12 +57,12 @@ class Details extends StatelessWidget {
             Row(
               children: [
                 Container(
-                  padding: EdgeInsets.all(4),
-                  child: Text(
-                    "New",
-                    style: TextStyle(fontSize: 15),
-                  ),
-                ),
+                    padding: EdgeInsets.all(4),
+                    child: Text(
+                      "New",
+                      style: TextStyle(fontSize: 15),
+                    ),
+                    decoration: BoxDecoration()),
               ],
             )
           ],
