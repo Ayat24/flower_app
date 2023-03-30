@@ -116,7 +116,7 @@ class Home extends StatelessWidget {
         appBar: AppBar(
           actions: [
             Consumer<Cart>(builder: ((context, classInstancee, child) {
-              return Row(
+             ////
                 children: [
                   Stack(
                     children: [
