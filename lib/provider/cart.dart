@@ -3,5 +3,7 @@ import 'package:flutter_appl/model/item.dart';
 
 class Cart with ChangeNotifier {
   List selectedProducts = [];
-  add(Item product) {}
+  add(Item product) {
+    selectedProducts.add(product);
+  }
 }
