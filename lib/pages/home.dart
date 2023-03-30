@@ -42,9 +42,13 @@ class Home extends StatelessWidget {
                     ]),
                     footer: GridTileBar(
 // backgroundColor: Color.fromARGB(66, 73, 127, 110),
-                      trailing: IconButton(
-                          color: Color.fromARGB(255, 62, 94, 70),
-                          onPressed: () {},
+                                           trailing:
+                          Consumer<Cart>(builder: ((context, Carttt, child) {
+                        return IconButton(
+                            color: Color.fromARGB(255, 62, 94, 70),
+                            onPressed: () {
+                              Carttt.add(items[index]);
+                            },
                           icon: Icon(Icons.add)),
 
                       leading: Text("\$12.99"),
