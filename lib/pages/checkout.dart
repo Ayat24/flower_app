@@ -8,6 +8,7 @@ class CheckOut extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final carttt = Provider.of<Cart>(context);
     return Scaffold(
       appBar: AppBar(
         backgroundColor: appbarGreen,
@@ -21,20 +22,20 @@ class CheckOut extends StatelessWidget {
               height: 550,
               child: ListView.builder(
                   padding: const EdgeInsets.all(8),
-                  itemCount: Carttt.selectedProducts.length,
+                  itemCount: carttt.selectedProducts.length,
                   itemBuilder: (BuildContext context, int index) {
                     return Card(
                       child: ListTile(
-                        title: Text(Carttt.selectedProducts[index].name),
+                        title: Text(carttt.selectedProducts[index].name),
                         subtitle: Text(
-                            "${Carttt.selectedProducts[index].price} - ${Carttt.selectedProducts[index].location}"),
+                            "${carttt.selectedProducts[index].price} - ${carttt.selectedProducts[index].location}"),
                         leading: CircleAvatar(
                           backgroundImage: AssetImage(
-                              Carttt.selectedProducts[index].imgPath),
+                              carttt.selectedProducts[index].imgPath),
                         ),
                         trailing: IconButton(
                             onPressed: () {
-                              Carttt.delete(Carttt.selectedProducts[index]);
+                              carttt.delete(carttt.selectedProducts[index]);
                             },
                             icon: Icon(Icons.remove)),
                       ),
@@ -44,15 +45,15 @@ class CheckOut extends StatelessWidget {
           ),
           ElevatedButton(
             onPressed: () {},
-            child: Text(
-              "Pay \$${Carttt.price}",
-              style: TextStyle(fontSize: 19),
-            ),
             style: ButtonStyle(
               backgroundColor: MaterialStateProperty.all(BTNpink),
               padding: MaterialStateProperty.all(EdgeInsets.all(12)),
               shape: MaterialStateProperty.all(RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(8))),
+            ),
+            child: Text(
+              "Pay \$${carttt.price}",
+              style: TextStyle(fontSize: 19),
             ),
           ),
         ],
