@@ -1,11 +1,11 @@
-// ignore_for_file: non_constant_identifier_names
+// ignore_for_file: non_constant_identifier_names, unused_local_variable
 
 import 'package:flutter/material.dart';
 import 'package:flutter_appl/model/item.dart';
 import 'package:flutter_appl/pages/details_screen.dart';
 import 'package:flutter_appl/shared/colors.dart';
 import "package:flutter_appl/provider/cart.dart";
-
+import 'package:flutter_appl/shared/appbar.dart';
 class Home extends StatelessWidget {
   Home({Key? key}) : super(key: key);
 
@@ -116,40 +116,7 @@ class Home extends StatelessWidget {
         appBar: AppBar(
           actions: [
             Consumer<Cart>(builder: ((context, classInstancee, child) {
-             ////
-                children: [
-                  Stack(
-                    children: [
-                      Positioned(
-                        bottom: 24,
-                        child: Container(
-                            child: Text(
-                              "${classInstancee.selectedProducts.length}",
-                              style: TextStyle(
-                                  fontSize: 16,
-                                  color: Color.fromARGB(255, 0, 0, 0)),
-                            ),
-                            padding: EdgeInsets.all(5),
-                            decoration: BoxDecoration(
-                                color: Color.fromARGB(211, 164, 255, 193),
-                                shape: BoxShape.circle)),
-                      ),
-                      IconButton(
-                        onPressed: () {},
-                        icon: Icon(Icons.add_shopping_cart),
-                      ),
-                    ],
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(right: 12),
-                    child: Text(
-                      "\$ ${classInstancee.price}",
-                      style: TextStyle(fontSize: 18),
-                    ),
-                  ),
-                ],
-              );
-            })),
+             ProductsAndPrice()  })),
           ],
           backgroundColor: appbarGreen,
           title: Text("Home"),
