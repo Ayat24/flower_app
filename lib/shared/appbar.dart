@@ -11,6 +11,7 @@ class ProductsAndPrice extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final Carttt = Provider.of<Cart>(context);
     return Row(
       children: [
         Stack(
@@ -19,7 +20,7 @@ class ProductsAndPrice extends StatelessWidget {
               bottom: 24,
               child: Container(
                   child: Text(
-                    "${classInstancee.selectedProducts.length}",
+                    "${Carttt.selectedProducts.length}",
                     style: TextStyle(
                         fontSize: 16, color: Color.fromARGB(255, 0, 0, 0)),
                   ),
@@ -29,7 +30,14 @@ class ProductsAndPrice extends StatelessWidget {
                       shape: BoxShape.circle)),
             ),
             IconButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => CheckOut(),
+                  ),
+                );
+              },
               icon: Icon(Icons.add_shopping_cart),
             ),
           ],
@@ -37,7 +45,7 @@ class ProductsAndPrice extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.only(right: 12),
           child: Text(
-            "\$ ${classInstancee.price}",
+            "\$ ${Carttt.price}",
             style: TextStyle(fontSize: 18),
           ),
         ),
