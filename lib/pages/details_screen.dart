@@ -58,11 +58,11 @@ class _DetailsState extends State<Details> {
         body: SingleChildScrollView(
           child: Column(
             children: [
-              Image.asset(widget.product.imgPath),,
+              Image.asset(widget.product.imgPath),
               SizedBox(
                 height: 11,
               ),
-               Text(
+              Text(
                 "\$  ${widget.product.price}",
                 style: TextStyle(fontSize: 20),
               ),

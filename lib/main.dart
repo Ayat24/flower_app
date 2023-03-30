@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_appl/pages/details_screen.dart';
 import 'package:flutter_appl/pages/home.dart';
 import 'package:flutter_appl/pages/login.dart';
-import '';
+
+import 'package:flutter_appl/provider/cart.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,9 +21,7 @@ class MyApp extends StatelessWidget {
       },
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: Details(
-          product: Item(price: 12.99, imgPath: "assets/img/2.webp"),
-        ),
+        home: Home(),
       ),
     );
   }
